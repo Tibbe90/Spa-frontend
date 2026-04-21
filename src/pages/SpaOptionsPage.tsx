@@ -9,7 +9,7 @@ import type { BookingSpaPackage, SpaPackageOption } from '../types/spaPackage';
  const spaPackages: SpaPackageOption[] = [
     {
         title: 'Kallt spa',
-        imageSrc: '/images/kallt.png',
+        imageSrc: '../images/kallt.png',
         imageAlt: 'Kallt spa',
         description: 'Frisk kyla som väcker kroppen och ger ny energi.',
         price: 500,
@@ -19,7 +19,7 @@ import type { BookingSpaPackage, SpaPackageOption } from '../types/spaPackage';
     },
     {
         title: 'Varmt spa',
-        imageSrc: '/images/varmt.png',
+        imageSrc: '../images/varmt.png',
         imageAlt: 'Varmt spa',
         description: 'Djup värme som slappnar av och ger total återhämtning.',
         price: 700,
@@ -29,7 +29,7 @@ import type { BookingSpaPackage, SpaPackageOption } from '../types/spaPackage';
     },
     {
         title: 'Lugn och ro',
-        imageSrc:'/images/lugn_och_ro.png',
+        imageSrc:'../images/lugn_och_ro.png',
         imageAlt: 'Lugn och ro',
         description:'Stillsam behandling för kropp och själ.',
         price: 400,
