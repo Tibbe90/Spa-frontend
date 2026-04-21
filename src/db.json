@@ -1,0 +1,65 @@
+{
+  "orders": [
+    {
+      "firstName": "Danilo",
+      "lastName": "Bardalez",
+      "email": "danilobardalez@gmail.com",
+      "phoneNr": "0737170440",
+      "totalPrice": 800,
+      "nrOfAtendees": 1,
+      "selectedPackage": {
+        "title": "Kallt spa",
+        "price": 500
+      },
+      "selectedTime": "Förmiddag",
+      "selectedDate": "2026-04-08",
+      "id": "zKnxVSCKyNE"
+    },
+    {
+      "firstName": "Jonas",
+      "lastName": "Tibbelin",
+      "email": "rub@gmail.com",
+      "phoneNr": "12357934",
+      "nrOfAtendees": 3,
+      "totalPrice": 1800,
+      "selectedPackage": {
+        "title": "Kallt spa",
+        "price": 500
+      },
+      "selectedTime": "Eftermiddag",
+      "selectedDate": "2026-04-07",
+      "id": "umUtUlDWSbQ"
+    },
+    {
+      "firstName": "Ninos",
+      "lastName": "Chimon",
+      "email": "spa3@hotmail.com",
+      "phoneNr": "07xxxxxxx",
+      "nrOfAtendees": 3,
+      "totalPrice": 2400,
+      "selectedPackage": {
+        "title": "Varmt spa",
+        "price": 700
+      },
+      "selectedTime": "Förmiddag",
+      "selectedDate": "2026-04-25",
+      "id": "pwZ6ay07yjE"
+    },
+    {
+      "firstName": "Isaac",
+      "lastName": "Chimon",
+      "email": "Ninos@Chimon.com",
+      "phoneNr": "07xxxxxxx",
+      "nrOfAtendees": 1,
+      "totalPrice": 800,
+      "selectedPackage": {
+        "title": "Kallt spa",
+        "price": 500
+      },
+      "selectedTime": "Förmiddag",
+      "selectedDate": "2026-04-17",
+      "id": "KAiQnWfMDSI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

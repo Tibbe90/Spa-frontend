@@ -1,0 +1,73 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.confirmation-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainSection {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../public/images/Landingpage.jpg');
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.575);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: -10px;
+    font-family: 'Georgia', 'Times New Roman','Times New Roman', Times, serif;
+}
+.text-content p {
+    font-size: 1.3rem;
+    font-family: 'Georgia', 'Times New Roman','Times New Roman', Times, serif;
+}
+
+.home-btn {
+    padding: 1.5rem 3.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+    background-color: #0e3528;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: #02885b;
+    cursor: pointer;
+}   
+
+
+
