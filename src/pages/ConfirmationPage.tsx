@@ -10,7 +10,7 @@ function ConfirmationPage() {
   const [order, setOrder] = useState<OrderDB | null>(null);
 
   useEffect(() => {
-    fetch(`${config.apiUrl}/order`)
+    fetch(`${config.apiUrl}/order/${id}`)
       .then((response: Response) => response.json())
       .then((data: OrderDB) => setOrder(data));
   }, [id]);
