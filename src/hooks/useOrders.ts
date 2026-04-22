@@ -6,7 +6,7 @@ export function useOrders() {
   const [orders, setOrders] = useState<OrderDB[]>([]);
 
   useEffect(() => {
-fetch("`${config.apiUrl}/orders`")
+fetch(`${config.apiUrl}/orders`)
       .then((res) => res.json())
       .then((data: OrderDB[]) => setOrders(data));
   }, []);
