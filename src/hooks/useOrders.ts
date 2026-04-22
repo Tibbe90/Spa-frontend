@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import type { OrderDB } from "../types/types";
+import { config } from "../data/config"
 
 export function useOrders() {
   const [orders, setOrders] = useState<OrderDB[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/orders")
+fetch("`${config.apiUrl}/orders`")
       .then((res) => res.json())
       .then((data: OrderDB[]) => setOrders(data));
   }, []);
