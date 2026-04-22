@@ -4,6 +4,7 @@ import type { OrderDB } from "../types/types";
 import { useLocation, useNavigate } from "react-router-dom";
 import type { BookingPageState } from "../types/spaPackage";
 import Calendar from "../components/Calendar/Calendar";
+import { config } from "../data/config"
 
 interface Order {
     firstName: string;
@@ -36,7 +37,7 @@ function BookingPage() {
     const saveOrder = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        fetch("http://localhost:8080/order", {
+        fetch(`${config.apiUrl}/order`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -2,6 +2,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import "./ConfirmationPage.css";
 import type { OrderDB } from "../types/types";
 import { useEffect, useState } from "react";
+import { config } from "../data/config"
 
 function ConfirmationPage() {
   const { id } = useParams();
@@ -9,7 +10,7 @@ function ConfirmationPage() {
   const [order, setOrder] = useState<OrderDB | null>(null);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/order/${id}`)
+    fetch(`${config.apiUrl}/order`)
       .then((response: Response) => response.json())
       .then((data: OrderDB) => setOrder(data));
   }, [id]);
